@@ -22,18 +22,30 @@ section {
 
 
 header {
-	  position: relative;
-		margin: 0;
+	  position: fixed;
+		top: 0;
+		width: 100%;
+		background-color:white;
+		background-size: auto, cover;
+		background-position: top left, center center;
+		padding: 1em 0 1em 0;
+		
+		color: #fff;
+	  height: 2em;
+	  padding-top: 1em;
+}
+.main-background{
+		float: left;
+		width: 100%;
 		background-image: url("images/overlay.png"), url("images/header.png");
 		background-size: auto, cover;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
-		padding: 14em 0 14em 0;
 		text-align: center;
-		color: #fff;
-	  height: 25em;
+		height: 25em;
 	  padding-top: 2.5em;
 }
+
 
 .inner {
 	  max-width: 62.5em;
@@ -90,7 +102,11 @@ nav ul li:hover > ul {
 }
 nav ul li:hover > a {
 transition:.5s ease-in-out;
-	  color: #cd853f;
+	  color: #FFF;
+	  	  display:block;
+	  background-color: orange;
+	  width: 80px;
+	  height: 30px;
 }
 nav > ul > li > a {
 	  cursor: pointer;
@@ -104,7 +120,8 @@ nav > ul > li {
   	float: left;
 }
 nav a {
-	  color: white;
+	  color: grey;
+
 }
 nav > ul li ul {
   	display: none;
@@ -122,7 +139,7 @@ nav > ul li ul li > a {
 	  display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
 	nav ul {
 		  display: none;
 	}
@@ -158,6 +175,9 @@ label:after{
 
 	nav a {
 		  color: #777;
+		  	  width: 80px;
+	  height: 30px;
+	  display:block;
 	}
 
 	nav ul li {
@@ -299,7 +319,7 @@ h1 {
 	  overflow:hidden;*/
       margin-left: 10px;
       margin-bottom: 10px;
-      box-shadow: 10px 0px 10px 10px #888888;
+      /*box-shadow: 10px 0px 10px 10px #888888;*/
 }
 
 
