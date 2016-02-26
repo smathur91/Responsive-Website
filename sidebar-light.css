@@ -1,0 +1,357 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html{
+	background-color: #fff;
+}
+
+body{
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+}
+
+/* Giving the page a width */
+
+section {
+	max-width: 1100px;
+	padding:0 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+header {
+	  position: relative;
+		margin: 0;
+		background-image: url("images/overlay.png"), url("images/header.png");
+		background-size: auto, cover;
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		padding: 14em 0 14em 0;
+		text-align: center;
+		color: #fff;
+	  height: 25em;
+	  padding-top: 2.5em;
+}
+
+.inner {
+	  max-width: 62.5em;
+	  margin: 0 auto;
+	  padding: 0em 1.25em;
+	  position: relative;
+}
+
+.logo {
+	  text-decoration: none;
+	  color: #777;
+	  font-weight: 800;
+	/*  font-size: 1.875em;
+	  line-height: 2.5em;*/
+}
+
+h1 {
+	  text-align: center;
+	  width: 100%;
+	   margin-top: 120px;
+	  color: #eee;
+	  font-weight: 800;
+	  font-size: 2.5em;
+}
+
+ul{
+list-style:none;
+
+}
+
+
+nav > ul {
+  	float: right;
+}
+
+nav > ul > li {
+transition:.5s ease-in-out;
+  	text-align: center;
+	  line-height: 2.5em;
+	  margin-left: 4.375em;
+}
+
+nav > ul li ul li {
+	  width: 100%;
+  	text-align: left;
+}
+
+nav ul li:hover {
+	  cursor: pointer;
+	  position: relative;
+}
+nav ul li:hover > ul {
+  	display: block;
+}
+nav ul li:hover > a {
+transition:.5s ease-in-out;
+	  color: #cd853f;
+}
+nav > ul > li > a {
+	  cursor: pointer;
+	  display: block;
+  	outline: none;
+  	width: 100%;
+	  text-decoration: none;
+}
+
+nav > ul > li {
+  	float: left;
+}
+nav a {
+	  color: white;
+}
+nav > ul li ul {
+  	display: none;
+  	position: absolute;
+  	left: 0;
+	  top: 100%;
+  	width: 100%;
+	  z-index: 2000;
+}
+nav > ul li ul li > a {
+	  text-decoration: none;
+}
+
+[type="checkbox"], label {
+	  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	nav ul {
+		  display: none;
+	}
+
+	label {
+  		display: block;
+  		background: #222;
+		  width: 2.5em;
+  		height: 2.5em;
+  		cursor: pointer;
+		  position: absolute;
+		  right: 1.25em;
+  		top: 0px;
+	}
+  
+label:after{
+  content:'';
+  display: block;
+  width: 1.875em;
+  height: 0.3125em;
+  background: #777;
+  margin: 0.4375em 0.3125em;
+  box-shadow: 0px 0.625em 0px #777, 0px 1.25em 0px #777
+}
+
+	[type="checkbox"]:checked ~ ul {
+  		display: block;
+  		z-index: 9999;
+  		position: absolute;
+		  right: 1.25em;
+		  left: 1.25em;
+	}
+
+	nav a {
+		  color: #777;
+	}
+
+	nav ul li {
+		  display: block;
+  		float: none;
+  		width: 100%;
+  		text-align: left;
+  		background: #222;
+		  text-indent: 1.25em;
+	}
+
+	nav > ul > li {
+  		margin-left: 0px;
+	}
+
+	nav > ul li ul li {
+  		display: block;
+		  float: none;
+	}
+  
+	nav > ul li ul {
+		  display: block;
+  		position: relative;
+  		width: 100%;
+		  z-index: 9999;
+		  float: none;
+	}
+h1 {
+	  font-size: 1.625em;
+}
+
+}
+
+
+/* The main content */
+
+.main-content {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 65%;
+	float: left;
+}
+
+/* The sidebar */
+
+.sidebar-light {
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	width: 280px;
+}
+
+.sidebar-light .company-info {
+	background-color: #F1F4F6;
+	margin-bottom: 30px;
+	padding: 35px 0;
+}
+
+.sidebar-light .company-info h3 {
+	color:  #4E5255;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 25px;
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info p {
+	color: #636568;
+	font-size: 13px;
+	line-height: 19px;
+	margin: 0 0 30px;
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info .social-buttons {
+	padding: 0 40px;
+}
+
+.sidebar-light .company-info .social-buttons .fa {
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.7;
+	background-color: #7B858F;
+	width: 34px;
+	height: 34px;
+}
+
+.sidebar-light .latest-blog-posts {
+	background-color: #F1F4F6;
+}
+
+.sidebar-light .latest-blog-posts h3 {
+	background-color: #7B858F;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px 30px;
+	text-align: left;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.sidebar-light .latest-blog-posts .element-title .fa {
+	margin-right: 15px;
+}
+
+.sidebar-light .latest-blog-posts ul {
+	list-style: none;
+	margin: 0;
+	text-align: left;
+	padding: 30px 40px;
+}
+
+.sidebar-light .latest-blog-posts ul li {
+	line-height: 1.2;
+	margin: 0 0 14px;
+}
+
+.sidebar-light .latest-blog-posts ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #4F5255;
+}
+
+.sidebar-light .latest-blog-posts ul li span {
+	color: #92999F;
+	font-size: 11px;
+	display: block;
+	margin-top:4px;
+}
+
+
+#section{
+	  float: left;
+      width: 100%;
+      background-color: white;
+	  /*min-Height: 700px;
+	  overflow:hidden;*/
+      margin-left: 10px;
+      margin-bottom: 10px;
+      box-shadow: 10px 0px 10px 10px #888888;
+}
+
+
+
+
+
+#section p {  font-size: 14px;
+	    }  
+
+#section h1, #section p{
+	margin: 10px;
+	letter-spacing: .01em; }
+	
+	
+	.col-sm-4 img {
+max-width:100%;
+width:100%;
+height:30%;
+border: 3px solid #73AD21;
+align: center;
+
+}
+
+.col-sm-4{
+
+float:left;
+width: 30%;
+padding: 10px;
+margin: 10px;
+}
+
+
+
+	
+	
+/* Making the sidebar responsive */
+
+
+
+@media (max-width: 900px) {
+
+	.main-content {
+		float:none;
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	.sidebar-light {
+	overflow:hidden;
+		
+		width: auto;
+	}
+
+}
+
